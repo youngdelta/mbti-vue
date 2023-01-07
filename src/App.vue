@@ -13,6 +13,7 @@
 		class="btn btn-orange"
 		>본캐 찾으러 GO!</a
 	>
+	<div class="btn btn-green btn-small share-or-copy">주변에 알리기</div>
 </template>
 
 <script>
