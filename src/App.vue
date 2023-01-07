@@ -13,6 +13,11 @@
 		class="btn btn-orange"
 		>본캐 찾으러 GO!</a
 	>
+	<router-link
+		class="btn btn-orange"
+		to="/questions.html"
+		>본캐 찾으러 GO!</router-link
+	>
 	<div class="btn btn-green btn-small share-or-copy">주변에 알리기</div>
 </template>
 
