@@ -2,23 +2,27 @@
 // import VueRouter from 'vue-router';
 // Vuex 때 처럼 create* 함수를 제공한다.
 import { createWebHistory, createRouter } from 'vue-router';
+import HomeView from '@/views/HomeView.vue';
+import QuestionsView from '@/views/QuestionsView.vue';
 
 // Vue.use(VueRouter);
 
 const routes = [
 	{
 		path: '/',
-		name: 'Home',
-		component: () => import('@/views/HomeView'), // 동적 import
+		name: 'HomeView',
+		// component: () => import('@/views/HomeView'), // 동적 import
+		component: HomeView,
 	},
 	{
 		path: '/questions',
 		name: 'QuestionsView',
-		component: () => import('@/views/QuestionsView'),
+		// component: () => import('@/viws/QuestionsView'),
+		component: QuestionsView,
 	},
 ];
 
-export const router = createRouter({
+const router = createRouter({
 	history: createWebHistory(),
 	routes,
 });
@@ -40,3 +44,5 @@ export const router = createRouter({
 // 		},
 // 	],
 // });
+
+export default router;

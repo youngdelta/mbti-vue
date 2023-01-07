@@ -15,10 +15,12 @@
 <script>
 	export default {
 		name: 'QuestionsView',
-		props: {},
+		props: {
+			//
+		},
 		data() {
 			return {
-				questions: [],
+				//
 			};
 		},
 		methods() {
@@ -28,6 +30,9 @@
 			//
 		},
 		mounted() {
+			//
+		},
+		watch: {
 			//
 		},
 	};

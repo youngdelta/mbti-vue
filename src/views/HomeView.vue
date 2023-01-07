@@ -10,10 +10,10 @@
 			src="/images/main_character.png"
 			alt="메인 이미지" />
 		<!-- <a
-		href="/questions.html"
-		class="btn btn-orange"
-		>본캐 찾으러 GO!</a
-	> -->
+			href="/questions"
+			class="btn btn-orange"
+			>본캐 찾으러 GO!</a
+		> -->
 		<router-link
 			class="btn btn-orange"
 			to="/questions"
