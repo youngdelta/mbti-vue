@@ -22,9 +22,9 @@ const routes = [
 	},
 	{
 		path: '/result',
-		// name: 'QuestionsView',
+		name: 'ResultView',
 		component: () => import('@/views/ResultView'),
-		// component: QuestionsView,
+		// component: ResultView,
 	},
 ];
 
