@@ -52,7 +52,8 @@
 			},
 
 			showResultPage() {
-				window.location.href = `/result?mbti=${this.mbti}`;
+				// window.location.href = `/result?mbti=${this.mbti}`;
+				this.$router.push({ name: 'ResultView', query: { mbti: this.mbti } });
 			},
 			onClickChoice(val) {
 				console.log('🚀 ~ file: QuestionsView.vue:56 ~ onClickChoice ~ val', val);
