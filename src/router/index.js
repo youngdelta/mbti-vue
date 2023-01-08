@@ -20,6 +20,12 @@ const routes = [
 		// component: () => import('@/viws/QuestionsView'),
 		component: QuestionsView,
 	},
+	{
+		path: '/result',
+		// name: 'QuestionsView',
+		component: () => import('@/views/ResultView'),
+		// component: QuestionsView,
+	},
 ];
 
 const router = createRouter({
