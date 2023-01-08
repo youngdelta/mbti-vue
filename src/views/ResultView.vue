@@ -40,7 +40,11 @@
 			</a>
 		</div>
 
-		<div class="btn btn-green btn-small share-or-copy">결과 공유하기</div>
+		<div
+			class="btn btn-green btn-small share-or-copy"
+			@click="shareEvent">
+			결과 공유하기
+		</div>
 		<a
 			href="/"
 			class="btn btn-gray btn-small"
@@ -51,6 +55,7 @@
 
 <script>
 	import { results, mbtis } from '@/assets/js/data.js';
+	import share from '@/assets/js/share.js';
 
 	export default {
 		name: 'ResultView',
@@ -70,6 +75,7 @@
 		},
 		props: {},
 		methods: {
+			shareEvent: share,
 			setResult() {
 				// const mbti = new URLSearchParams(location.search).get('mbti');
 				const mbti = this.$route.query.mbti;

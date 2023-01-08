@@ -62,8 +62,6 @@ body {
 	font-size: 22px;
 }
 
-.question-box .choice2 {
-}
 @media (max-width: 640px) {
 	.progress {
 		margin-bottom: 30px;
@@ -76,7 +74,7 @@ body {
 	.question-box .question {
 		font-size: 28px;
 	}
-	.question-box.choice {
-		font-size: 20px;
+	.question-box .choice {
+		font-size: 18px;
 	}
 }
