@@ -40,11 +40,7 @@
 			</a>
 		</div>
 
-		<div
-			class="btn btn-green btn-small share-or-copy"
-			@click="shareEvent">
-			결과 공유하기
-		</div>
+		<div class="btn btn-green btn-small share-or-copy">결과 공유하기</div>
 		<a
 			href="/"
 			class="btn btn-gray btn-small"
@@ -55,13 +51,13 @@
 
 <script>
 	import { results, mbtis } from '@/assets/js/data.js';
-	import share from '@/assets/js/share.js';
 
 	export default {
 		name: 'ResultView',
 		created() {},
 		mounted() {
 			this.setResult();
+			require('@/assets/js/share.js');
 		},
 		data() {
 			return {
@@ -75,7 +71,17 @@
 		},
 		props: {},
 		methods: {
-			shareEvent: share,
+			async shareEvent() {
+				console.log('🚀 ~ file: ResultView.vue:79 ~ shareEvent ~ shareEvent', this.$event);
+
+				// if (share.isSupportedShare) {
+				// 	await share.startNativeShare();
+				// 	return;
+				// }
+				// if (share.isSupportedClipboard || share.isSupportedClipboardCommand) {
+				// 	await share.copyToClipboard();
+				// }
+			},
 			setResult() {
 				// const mbti = new URLSearchParams(location.search).get('mbti');
 				const mbti = this.$route.query.mbti;
