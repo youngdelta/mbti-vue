@@ -8,6 +8,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width,initial-scale=1.0" />
+
 		<link
 			rel="icon"
 			href="<%= BASE_URL %>favicon.ico" />
@@ -31,13 +32,11 @@
 		<link
 			rel="stylesheet"
 			href="/css/results.css" />
-		<script
-			src="/js/share.js"
-			defer></script>
-		<script
+
+		<!-- <script
 			type="module"
 			src="/js/data.js"
-			defer></script>
+			defer></script> -->
 
 		<title><%= htmlWebpackPlugin.options.title %></title>
 	</head>
@@ -47,5 +46,8 @@
 		</noscript>
 		<div id="app"></div>
 		<!-- built files will be auto injected -->
+		<script
+			src="/js/share.js"
+			defer></script>
 	</body>
 </html>

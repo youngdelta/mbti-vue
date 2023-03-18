@@ -1,4 +1,4 @@
-import { questions } from './data.js';
+import { questions } from '@/assets/js/data.js';
 
 const progressValueEl = document.querySelector('.progress .value');
 const numberEl = document.querySelector('.number');

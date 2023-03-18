@@ -3,7 +3,7 @@
 // Vuex 때 처럼 create* 함수를 제공한다.
 import { createWebHistory, createRouter } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
-import QuestionsView from '@/views/QuestionsView.vue';
+// import QuestionsView from '@/views/QuestionsView.vue';
 
 // Vue.use(VueRouter);
 
@@ -17,8 +17,14 @@ const routes = [
 	{
 		path: '/questions',
 		name: 'QuestionsView',
-		// component: () => import('@/viws/QuestionsView'),
-		component: QuestionsView,
+		component: () => import('@/views/QuestionsView'),
+		// component: QuestionsView,
+	},
+	{
+		path: '/result',
+		name: 'ResultView',
+		component: () => import('@/views/ResultView'),
+		// component: ResultView,
 	},
 ];
 

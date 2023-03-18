@@ -7,17 +7,17 @@
 		</div>
 		<div class="question-box">
 			<div class="number">{{ numberElTxt }}</div>
-			<div class="question">{{ questionElTxt }}</div>
+			<div
+				class="question"
+				v-html="questionElTxt"></div>
 			<div
 				class="btn btn-gray choice choice1"
-				@click="onClickChoice(0)">
-				{{ choice1ElTxt }}
-			</div>
+				@click="onClickChoice(0)"
+				v-html="choice1ElTxt"></div>
 			<div
 				class="btn btn-gray choice choice2"
-				@click="onClickChoice(1)">
-				{{ choice2ElTxt }}
-			</div>
+				@click="onClickChoice(1)"
+				v-html="choice2ElTxt"></div>
 		</div>
 	</div>
 </template>
@@ -52,7 +52,8 @@
 			},
 
 			showResultPage() {
-				window.location.href = `./result.html?mbti=${this.mbti}`;
+				// window.location.href = `/result?mbti=${this.mbti}`;
+				this.$router.push({ name: 'ResultView', query: { mbti: this.mbti } });
 			},
 			onClickChoice(val) {
 				console.log('🚀 ~ file: QuestionsView.vue:56 ~ onClickChoice ~ val', val);
