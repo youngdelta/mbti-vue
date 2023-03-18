@@ -9,6 +9,6 @@ export const toggle = {
         
         toggleShow() {
             this.isShowing = !this.isShowing;
-        }
+        },
     },
 }
