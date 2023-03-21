@@ -1,0 +1,11 @@
+.game-board {
+  width: 300px;
+  height: 600px;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+.tetromino {
+  color: #f2f311;
+  background-color: aliceblue;
+}
